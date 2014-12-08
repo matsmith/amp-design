@@ -1,4 +1,4 @@
 Amp Design
 ==========
 
-Designs for AMP are located on the gh-pages branch
+Designs for AMP are located on the [gh-pages branch](../gh-pages)

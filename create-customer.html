@@ -36,7 +36,20 @@
 					<label for="other-one">Other Info Needed:</label>
 					<input id="other-one" type="text" placeholder="Field data" class="centi">
 
-					<label class="leading centi">Is this a demo company?<br /><input type="checkbox" name="demo" value="yes"> Yes</label>
+					<label for="type">Type:</label>
+					<select id="type" name="type" class="centi">
+						<option value="active">Active</option>
+						<option value="disabled">Disabled</option>
+						<option value="template">Template</option>
+						<option value="demo">Demo</option>
+					</select>
+
+					<label for="status">Status:</label>
+					<select id="status" name="status" class="centi">
+						<option value="application_and_reporting">Application and Reporting</option>
+						<option value="application">Application</option>
+						<option value="reporting">Reporting</option>
+					</select>
 					
 					<button type="submit">Create</button>
 				</form>

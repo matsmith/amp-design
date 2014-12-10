@@ -16,7 +16,7 @@
 	<main role="main">
 		<section class="mod m--head">
 			<header class="mod__header">
-				<h1 class="mega">Create Authorization Code</h1>
+				<h1 class="mega">View/Create Access Code</h1>
 			</header>
 		</section>
 
@@ -24,41 +24,13 @@
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="customer-A.html">Customer A</a></li>
-				<li>Create Authorization Code</li>
+				<li>View/Create Access Code</li>
 			</ul>
 		</nav>
 
-		<section class="mod m--pop">
-			<header class="mod__header">
-				<h2>Create Access Code</h2>
-			</header>
-			<div class="mod__body">
-				<form action="create-company-error.html" method="get" class="form_horizontal">
-				<div class="control_group">
-					<label for="auth-code" class="label--pop nano">Access Code:</label>
-					<input id="auth-code" name="auth-code" type="text" placeholder="TESTAUTHCD" class="milli">
+		<div class="l_col">
 
-					<label for="auth-code-name" class="label--pop nano">Description:</label>
-					<input id="auth-code-name" name="auth-code" type="text" placeholder="Great Access Code" class="milli">
-				</div>
-
-				<div class="control_group">
-					<label for="other-one" class="label--pop nano">Status:</label>
-					<select id="other-one" name="other-one" class="milli">
-						<option value="option one">Active</option>
-						<option value="option two">Disabled</option>
-					</select>
-
-					<label for="demo" class="label--pop nano">Demo access code:</label>
-					<label class="milli"><input type="checkbox" id="demo" name="demo" value="yes">Yes</label>
-				</div>
-					
-					<button type="submit">Create</button>
-				</form>
-			</div>
-		</section>
-
-		<section class="mod m--pop">
+		<section class="mod m--pop hecto l_col--top-align">
 			<header class="mod__header">
 				<h2>Access Code List</h2>
 			</header>
@@ -69,28 +41,36 @@
 					<thead>
 						<tr>
 							<th scope="col">Code</th>
+							<th scope="col">Name</th>
 							<th scope="col">Company</th>
 							<th scope="col"></th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<th scope="row"><a href="#">CDTESTCPUD</a></th>
+							<th scope="row"><a href="edit-access-code.html">CDTESTCPUD</a></th>
+							<td>Access for compact disc</td>
 							<td>ABC Company</td>
 							<td><span data-icon="check"></span></td>
 						</tr>
 						<tr>
 							<th scope="row"><a href="#">CDTESTCPUD</a></th>
+							<td>Access for compact disc</td>
+
 							<td>This is a really really long company name again which could wrap many times</td>
 							<td><span data-icon="delete"></span></td>
 						</tr>
 						<tr>
 							<th scope="row"><a href="#">CDTESTCPUD</a></th>
+							<td>Access for compact disc</td>
+
 							<td>ABC Company</td>
 							<td><span data-icon="check"></span></td>
 						</tr>
 						<tr>
 							<th scope="row"><a href="#">CDTESTCPUD</a></th>
+							<td>Access for compact disc</td>
+
 							<td>ABC Company</td>
 							<td><span data-icon="check"></span></td>
 						</tr>
@@ -102,21 +82,25 @@
 					<tbody>
 						<tr>
 							<th scope="row"><a href="#">CDTESTCPUD</a></th>
+							<td>Access for compact disc</td>
 							<td>ABC Company</td>
 							<td><span data-icon="check"></span></td>
 						</tr>
 						<tr>
 							<th scope="row"><a href="#">CDTESTCPUD</a></th>
+							<td>Access for compact disc</td>
 							<td>This is a really really long company name again which could wrap many times</td>
 							<td><span data-icon="check"></span></td>
 						</tr>
 						<tr>
 							<th scope="row"><a href="#">CDTESTCPUD</a></th>
+							<td>Access for compact disc</td>
 							<td>ABC Company</td>
 							<td><span data-icon="check"></span></td>
 						</tr>
 						<tr>
 							<th scope="row"><a href="#">CDTESTCPUD</a></th>
+							<td>Access for compact disc</td>
 							<td>ABC Company</td>
 							<td><span data-icon="check"></span></td>
 						</tr>
@@ -124,6 +108,33 @@
 				</table>
 			</div>
 		</section>
+		
+		<section class="mod m--pop milli l_col--top-align">
+			<header class="mod__header">
+				<h2>Create Access Code</h2>
+			</header>
+			<div class="mod__body">
+				<form action="create-company-error.html" method="get" class="form_vertical">
+					<label for="auth-code">Access Code:</label>
+					<input id="auth-code" name="auth-code" type="text" placeholder="TESTAUTHCD" class="giga">
+
+					<label for="auth-code-name">Access Code Name:</label>
+					<input id="auth-code-name" name="auth-code" type="text" placeholder="Great Access Code" class="giga">
+
+					<label for="other-one">Status:</label>
+					<select id="other-one" name="other-one" class="giga">
+						<option value="option one">Active</option>
+						<option value="option two">Disabled</option>
+					</select>
+
+					<label class="leading giga">Is this a demo access code?<br /><input type="checkbox" name="demo" value="yes"> Yes</label>
+					
+					<button type="submit">Create</button>
+				</form>
+			</div>
+		</section>
+
+		</div>
 
 		<section class="mod">
 			<footer class="mod__footer">

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Select Customer | Account Management Portal - Johnson and Johnson Health &amp; Wellness</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="Johnson and Johnson Web User Interface Style Guide">
+	<meta name="keywords" content="Johnson and Johnson User Interface Design, style guide, frontend development, frontend style guide, html code standards, html5 code standards, css code standards, best code practices, development, frontend development, user interface style guide">
+
+	<link rel="stylesheet" href="assets/stylesheets/jnjui.css" />
+
+</head>
+<body>
+
+	<main role="main">
+		<section class="mod m--head">
+			<header class="mod__header">
+				<h1 class="mega">Companies</h1>
+			</header>
+		</section>
+
+		<nav class="breadcrumb">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li>Customer A</li>
+			</ul>
+		</nav>
+
+		<section class="mod m--pop">
+			<header class="mod__header">
+				<h2>Search within: {{Customer Name}}</h2>
+			</header>
+			<div class="mod__body">
+				<form method="post" action="" class="form_vertical">
+					<label for="search">Search within the current customer you have selected.</label>
+					<input type="text" id="search" name="search" placeholder="ABC Company" class="mega">
+
+					<button type="submit">Search</button>
+				</form>
+
+				<p>Let's take the following example.  Let's say that we have a root customer named <code>"Cola"</code> which has the following sub companies under it;<code>"Pepsi", "Pepsico", "Pepsiltd", "MT Dew", "Pepsicola."</code>If have have choosen <code>Cola</code> as the customer and searched for <code>"Pepsi"</code> you would get returned all of the previously mentioned root companies display similar to below. Notice that <code>"MT Dew"</code> is not returned.  This is because we are only searching on the text that comes after the last dash (-) in the External ID column.  This search continues down through EVERY level under the selected customer.  Notice that the last entry is returned because <code>"PEPSICO"</code> will match on the work "PEPSI."</p>
+
+				<section class="mod m--pop">
+					<table class="striped">
+						<thead>
+							<tr>
+								<th scope="col">External ID</th>
+								<th scope="col">Company Name</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row"><a href="company-A.html">COLA-PEPSI</a></th>
+								<td scope="row">Pepsi Company</td>
+							</tr>
+							<tr>
+								<th scope="row"><a href="">COLA-PEPSICO</a></th>
+								<td scope="row">Pepsi Co.</td>
+							</tr>
+							<tr>
+								<th scope="row"><a href="">COLA-PEPSILTD</a></th>
+								<td scope="row">Pepsi, Limited Liability Co.</td>
+							</tr>
+							<tr>
+								<th scope="row"><a href="">COLA-PEPSICOLA</a></th>
+								<td scope="row">Pepsi Cola Company</td>
+							</tr>
+							<tr>
+								<th scope="row"><a href="">COLA-PEPSI-PEPSICO</a></th>
+								<td scope="row">(3rd level) COLA &rarr; PEPSI &rarr; PESICO</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</div>
+		</section>
+
+		<section class="mod">
+			<footer class="mod__footer">
+				All contents &copy; Copyright Johnson &amp; Johnson Services, Inc.1997-2014. All Rights Reserved.
+			</footer>
+		</section>
+
+	</main>
+</body>
+</html>
+
+	

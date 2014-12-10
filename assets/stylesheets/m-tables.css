@@ -14,6 +14,9 @@ th.center, td.center {
 th[scope="row"] {
 	text-align: left;
 }
+th a, td a {
+	display: block;
+}
 
 table.striped tbody tr:nth-child(odd) th, table.striped tbody tr:nth-child(odd) td {
 	background: rgba(0, 0, 0, 0.035);

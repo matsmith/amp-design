@@ -4,32 +4,42 @@ Red: #ff6d6d, rgba(227, 24, 55, 1)
 */
 @font-face {
 	font-family: 'archivo_narrowbold';
-	src: url('../fonts/archivonarrow-bold.eot');
-	src: url('../fonts/archivonarrow-bold.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/archivonarrow-bold.woff') format('woff'),
-	url('../fonts/archivonarrow-bold.ttf') format('truetype'),
-	url('../fonts/archivonarrow-bold.svg#archivo_narrowbold') format('svg');
+	src:url('../fonts/archivonarrow-bold.eot');
+	src:url('../fonts/archivonarrow-bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/archivonarrow-bold.woff') format('woff'),
+		url('../fonts/archivonarrow-bold.ttf') format('truetype'),
+		url('../fonts/archivonarrow-bold.svg#archivo_narrowbold') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
     font-family: 'archivo_narrowregular';
-    src: url('../fonts/archivonarrow-regular.eot');
-    src: url('../fonts/archivonarrow-regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/archivonarrow-regular.woff') format('woff'),
-         url('../fonts/archivonarrow-regular.ttf') format('truetype'),
-         url('../fonts/archivonarrow-regular.svg#archivo_narrowregular') format('svg');
+    src:url('../fonts/archivonarrow-regular.eot');
+    src:url('../fonts/archivonarrow-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/archivonarrow-regular.woff') format('woff'),
+        url('../fonts/archivonarrow-regular.ttf') format('truetype'),
+        url('../fonts/archivonarrow-regular.svg#archivo_narrowregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
 	font-family: 'FontAwesome';
-	src: url('../fonts/fontawesome-webfont.eot');
-	src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/fontawesome-webfont.woff') format('woff'),
-	url('../fonts/fontawesome-webfont.ttf') format('truetype'),
-	url('../fonts/fontawesome-webfont.svg#fontawesome') format('svg');
+	src:url('../fonts/fontawesome-webfont.eot');
+	src:url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/fontawesome-webfont.woff') format('woff'),
+		url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+		url('../fonts/fontawesome-webfont.svg#fontawesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?pnuww9');
+	src:url('../fonts/icomoon.eot?#iefixpnuww9') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?pnuww9') format('woff'),
+		url('../fonts/icomoon.ttf?pnuww9') format('truetype'),
+		url('../fonts/icomoon.svg?pnuww9#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

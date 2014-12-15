@@ -4,6 +4,15 @@
 	margin-right: 0.375em;
 	-webkit-font-smoothing: antialiased;
 }
+[data-info]:after {
+	font-family: 'icomoon';
+	font-weight: normal;
+	margin-left: 0.375em;
+	color: #FDBB2C;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Icon */
 [data-icon="shopping-cart"]:before { content: "\f07a"; }
 [data-icon="upload"]:before { content: "\f0ee"; }
 [data-icon="download"]:before { content: "\f0ed"; }
@@ -15,3 +24,7 @@
 [data-icon="search"]:before { content: "\f002"; }
 [data-icon="check"]:before { content: "\f046"; }
 [data-icon="calendar"]:before { content: "\f073"; }
+
+/* Info */
+[data-info="custom"]:after { content: "\e600"; font-size: 1.2em; margin-left: 0.075em; }
+[data-info="inherited"]:after { content: "\e601"; }

@@ -22,6 +22,10 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 	opacity: 0.8;
 }
 
+.button.spacer, button.spacer {
+	margin-left: 4px;
+}
+
 /* Sizes */
 .button.button_mini,
 button.button_mini,
@@ -65,7 +69,7 @@ input[type="submit"].disabled, input[type="submit"][disabled] {
 .button.secondary,
 button.secondary,
 input[type="submit"].secondary {
-	background-color: #12C2E9;
+	background-color: #4FC3A0;
 }
 .button.warning,
 button.warning,

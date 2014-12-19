@@ -9,10 +9,10 @@
 	background-color: rgba(180, 22, 1, .9);
 	border-radius: 2px 2px 0 0;
 }
-.mod__header h1 {
+.mod__header h1, .mod__header h3 {
 	color: #fff;
 }
-.mod__header h2, .mod__header h3 {
+.mod__header h2 {
 	color: #ccc;
 }
 .mod__body {

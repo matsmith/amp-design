@@ -23,7 +23,7 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 }
 
 .button.spacer, button.spacer {
-	margin-left: 4px;
+	margin-left: 0.5em;
 }
 
 /* Sizes */
